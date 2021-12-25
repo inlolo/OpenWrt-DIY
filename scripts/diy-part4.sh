@@ -97,16 +97,16 @@ sed -i "s/${orig_version}/${orig_version} ($(date +"%Y-%m-%d"))/g" zzz-default-s
 popd
 
 # Use Lienol's https-dns-proxy package
-pushd feeds/packages/net
-rm -rf https-dns-proxy
-svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
-popd
+#pushd feeds/packages/net
+#rm -rf https-dns-proxy
+#svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy
+#popd
 
 # Use snapshots' syncthing package
-pushd feeds/packages/utils
-rm -rf syncthing
-svn co https://github.com/openwrt/packages/trunk/utils/syncthing
-popd
+#pushd feeds/packages/utils
+#rm -rf syncthing
+#svn co https://github.com/openwrt/packages/trunk/utils/syncthing
+#popd
 
 # Fix mt76 wireless driver
 pushd package/kernel/mt76
