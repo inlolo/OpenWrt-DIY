@@ -25,8 +25,8 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: config/Qualcomm/gdock.config
   DIY_P1_SH: scripts/diy-part1.sh
-  #DIY_P2_SH: scripts/diy-part2.sh
-  DIY_P2_SH: scripts/diy-part4.sh
+  DIY_P2_SH: scripts/diy-part2.sh
+  #DIY_P2_SH: scripts/diy-part4.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: true
@@ -74,8 +74,8 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-      
-#cat config/Qualcomm/Qualcomm-extra-low.config >> openwrt/.config
+#cat config/Qualcomm/Qualcomm-mini-extra.config >> openwrt/.config
+#cat config/Qualcomm/Qualcomm-extra-gdock.config >> openwrt/.config
 
     - name: Load custom configuration
       run: |
