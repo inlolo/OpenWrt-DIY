@@ -15,6 +15,7 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add feed sources
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+#netkeeper（闪讯插件）luci-proto-netkeeper（闪讯拨号界面）netkeeper-interception（闪讯拦截服务）luci-app-netkeeper-interception（闪讯拦截服务界面）
 sed -i '$a src-git diy https://github.com/CCnut/feed-netkeeper.git;LUCI-LUA-UCITRACK' feeds.conf.default
 
 # Add luci-theme-argon
